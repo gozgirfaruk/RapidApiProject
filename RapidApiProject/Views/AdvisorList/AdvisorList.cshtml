@@ -1,0 +1,22 @@
+﻿@model List<AdvisorListViewModel>
+@{
+    Layout = null;
+}
+
+<table>
+    <thead>
+        <tr>Title</tr>
+        <tr>Price</tr>
+        <tr>Price</tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.title</td>
+                <td>@item.priceForDisplay</td>
+            </tr>
+        }
+
+    </tbody>
+</table>
